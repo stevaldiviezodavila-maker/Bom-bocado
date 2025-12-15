@@ -18,6 +18,7 @@ import LibroDeReclamaciones from "./paginas/LibroDeReclamaciones";
 // Contexto y Mascota
 import { MascotProvider } from './context/MascotContext';
 import CakeMascot from './componentes/CakeMascot';
+import CookieConsent from './componentes/CookieConsent';
 import "./App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <MascotProvider>
       {/* La mascota va fuera de Routes para estar siempre visible */}
       <CakeMascot />
+      <CookieConsent />
       
       <Routes>
         <Route element={<MainLayout />}>
