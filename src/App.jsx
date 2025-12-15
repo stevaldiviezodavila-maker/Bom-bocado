@@ -14,6 +14,8 @@ import Intranet from "./paginas/Intranet";
 import Checkout from "./paginas/Checkout";
 import Gracias from "./paginas/Gracias";
 import LibroDeReclamaciones from "./paginas/LibroDeReclamaciones";
+import PoliticaCookies from "./paginas/PoliticaCookies";
+import PoliticaPrivacidad from "./paginas/PoliticaPrivacidad";
 
 // Contexto y Mascota
 import { MascotProvider } from './context/MascotContext';
@@ -40,6 +42,8 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/gracias" element={<Gracias />} />
           <Route path="/libro-de-reclamaciones" element={<LibroDeReclamaciones />} />
+          <Route path="/politica-de-cookies" element={<PoliticaCookies />} />
+          <Route path="/politica-de-privacidad" element={<PoliticaPrivacidad />} />
         </Route>
       </Routes>
     </MascotProvider>
