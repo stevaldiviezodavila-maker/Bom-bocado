@@ -15,7 +15,6 @@ const CookieConsent = () => {
     localStorage.setItem('cookie-consent', 'true');
     setVisible(false);
   };
-
     const rejectCookies = () => {
     localStorage.setItem('cookie-consent', 'false');
     setVisible(false);
